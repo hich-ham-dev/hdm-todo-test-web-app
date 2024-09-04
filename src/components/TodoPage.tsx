@@ -2,24 +2,32 @@
  * @todo YOU HAVE TO IMPLEMENT THE DELETE AND SAVE TASK ENDPOINT, A TASK CANNOT BE UPDATED IF THE TASK NAME DID NOT CHANGE, YOU'VE TO CONTROL THE BUTTON STATE ACCORDINGLY
  */
 import { Check, Delete } from '@mui/icons-material';
-import { Box, Button, Container, IconButton, TextField, Typography } from '@mui/material';
+
+import {
+  Box,
+  Button,
+  Container,
+  IconButton,
+  TextField,
+  Typography,
+} from '@mui/material';
 import { useEffect, useState } from 'react';
 import useFetch from '../hooks/useFetch.ts';
 import { Task } from '../index';
 
 const TodoPage = () => {
   const api = useFetch();
-  const [tasks, setTasks] = useState<Task[]>([]);
+  const [ tasks, setTasks ] = useState<Task[]>([]);
 
   const handleFetchTasks = async () => setTasks(await api.get('/tasks'));
 
   const handleDelete = async (id: number) => {
     // @todo IMPLEMENT HERE : DELETE THE TASK & REFRESH ALL THE TASKS, DON'T FORGET TO ATTACH THE FUNCTION TO THE APPROPRIATE BUTTON
-  }
+  };
 
   const handleSave = async () => {
     // @todo IMPLEMENT HERE : SAVE THE TASK & REFRESH ALL THE TASKS, DON'T FORGET TO ATTACH THE FUNCTION TO THE APPROPRIATE BUTTON
-  }
+  };
 
   useEffect(() => {
     (async () => {
@@ -56,6 +64,6 @@ const TodoPage = () => {
       </Box>
     </Container>
   );
-}
+};
 
 export default TodoPage;
