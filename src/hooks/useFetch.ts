@@ -16,9 +16,7 @@ export default function useFetch() {
 
       return response.json();
     } catch (error) {
-      console.error(error);
-
-      return false;
+      throw new Error('An error occurred while fetching data');
     }
   };
 
