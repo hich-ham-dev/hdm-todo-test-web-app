@@ -25,6 +25,6 @@ export default function useFetch() {
     post: (route: string, data: Record<string, any>) => callApi('POST', route, data),
     put: (route: string, data: Record<string, any>) => callApi('PUT', route, data),
     patch: (route: string, data: Record<string, any>) => callApi('PATCH', route, data),
-    delete: (route: string, data?: Record<string, any>) => callApi('DELETE', route, data),
+    delete: (route: string, data: Record<string, any>) => callApi('DELETE', route, data),
   };
 }
