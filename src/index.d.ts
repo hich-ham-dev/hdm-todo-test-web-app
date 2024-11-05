@@ -4,3 +4,8 @@ export interface Task {
   createdAt: string,
   updatedAt: string,
 }
+
+export interface Category {
+  id: number,
+  name: string,
+}
