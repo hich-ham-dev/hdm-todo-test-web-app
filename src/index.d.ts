@@ -1,4 +1,8 @@
 export interface Task {
+  category:{
+    id: number,
+    name: string,
+  },
   id: number,
   name: string,
   createdAt: string,
