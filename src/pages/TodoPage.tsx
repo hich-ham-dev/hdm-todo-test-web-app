@@ -268,11 +268,11 @@ const TodoPage = () => {
                   borderRadius={2}
                 >
                     <Typography
-                    variant="body1"
-                    color={'#f0f8fe'}
-                    fontWeight={'bold'}
-                    sx={{ flexGrow: 1, textAlign: 'left', cursor: 'pointer' }}
-                    onClick={() => setEditingTask(task)}
+                      variant="body1"
+                      color={'#f0f8fe'}
+                      fontWeight={'bold'}
+                      sx={{ flexGrow: 1, textAlign: 'left', cursor: 'pointer' }}
+                      onClick={() => setEditingTask(task)}
                     >
                     {task.name}
                     {task.category.name === 'Maison' ? (
@@ -284,10 +284,10 @@ const TodoPage = () => {
                       />
                     ) : task.category.name === 'Travail' ? (
                       <Chip
-                      icon={<Work />}
-                      label={task.category.name}
-                      size="small"
-                      sx={{ marginLeft: 1, bgcolor: '#f0f8fe', color: '#4b97e6' }}
+                        icon={<Work />}
+                        label={task.category.name}
+                        size="small"
+                        sx={{ marginLeft: 1, bgcolor: '#f0f8fe', color: '#4b97e6' }}
                       />
                     ) : null}
                     </Typography>
@@ -303,11 +303,7 @@ const TodoPage = () => {
               )}
             </Box>
           ))}
-        </Box>
-
-        
-
-        
+        </Box>        
       </Box>
     </Container>
   );
