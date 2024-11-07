@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/client": "^3.11.8",
     "@emotion/css": "^11.11.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -20,6 +21,7 @@
     "@mui/x-date-pickers": "^7.5.0",
     "@vitejs/plugin-react": "^4.3.3",
     "dayjs": "^1.11.10",
+    "graphql": "^16.9.0",
     "i18next": "^23.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -14,6 +14,7 @@ import { createWebtuneTheme } from '../config/theming.ts';
 import { UiThemeContext } from './UiThemeContext';
 import 'react-toastify/dist/ReactToastify.css';
 import 'dayjs/locale/fr'; // import locale
+import TaskList from './TaskList.tsx';
 
 dayjs.extend(weekOfYear);
 dayjs.extend(isoWeek);
@@ -39,6 +40,7 @@ const App = () => {
       <ThemeProvider theme={uiThemeContext.theme}>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <RouterProvider router={router} />
+          <TaskList />
           <ToastContainer />
         </LocalizationProvider>
       </ThemeProvider>
